@@ -1,0 +1,37 @@
+{
+  "name": "invariance/datapunk",
+  "description": "description",
+  "minimum-stability": "stable",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "invariance"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Invariance\\Datapunk\\Lib\\": "lib",
+      "Invariance\\Datapunk\\": "App"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Folleah/datapunk-ecs.git"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "rakibtg/sleekdb": "^2.1",
+    "aura/router": "^3.1",
+    "invariance/datapunk-ecs": "dev-main",
+    "spiral/roadrunner": "v2.0",
+    "nyholm/psr7": "^1.4",
+    "ext-shmop": "*",
+    "symfony/serializer": "^5.3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  }
+}
